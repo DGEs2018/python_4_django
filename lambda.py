@@ -5,9 +5,9 @@ setofpeople = [
     {"name": 'Dracon', 'house': 'Ravenclaw'}
 ]
 
-def f(setofpeople):
-    return setofpeople['house']
+# def f(setofpeople):
+#     return setofpeople['house']
 
-setofpeople.sort(key=f)
+setofpeople.sort(key=lambda people: people["house"])
 
 print(setofpeople)
